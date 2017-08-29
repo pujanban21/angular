@@ -3,16 +3,20 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import {ServerComponent} from './server/server.component';
+import { ServersComponent } from './servers/servers.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent   //adding additional component
+    ServerComponent,
+    ServersComponent
   ],
-  imports: [  //simply add other module to this module
+  imports: [
     BrowserModule,
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent] //for the main component
+
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
